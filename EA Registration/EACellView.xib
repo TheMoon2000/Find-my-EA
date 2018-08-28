@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="EA Category View" id="c22-O7-iKe" customClass="EACellView" customModule="Find_my_EA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box verticalHuggingPriority="750" alphaValue="0.69999999999999996" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="RAL-xs-hAS">
+                    <rect key="frame" x="0.0" y="-2" width="208" height="5"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzT-Vc-wud">
+                    <rect key="frame" x="37" y="14" width="128" height="21"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="EAs Pending" id="cix-of-u1W">
+                        <font key="font" size="15" name="HelveticaNeue"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qrY-yp-Qfz">
+                    <rect key="frame" x="11" y="14" width="20" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="QG1-kW-YDp"/>
+                        <constraint firstAttribute="height" constant="19" id="YBR-0U-ySh"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="Clock" id="fvz-pl-ePv"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" alphaValue="0.80000000000000004" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONo-OS-E9B">
+                    <rect key="frame" x="178" y="16" width="19" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="BtO-mB-YGu"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" id="teM-3I-rPf">
+                        <font key="font" size="13" name="HelveticaNeue"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="RAL-xs-hAS" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="6hp-4l-cJ2"/>
+                <constraint firstAttribute="bottom" secondItem="RAL-xs-hAS" secondAttribute="bottom" id="EpX-02-Drf"/>
+                <constraint firstAttribute="trailing" secondItem="RAL-xs-hAS" secondAttribute="trailing" id="HZu-aG-GCK"/>
+                <constraint firstItem="qrY-yp-Qfz" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" constant="0.5" id="ROc-nJ-3JY"/>
+                <constraint firstAttribute="trailing" secondItem="TzT-Vc-wud" secondAttribute="trailing" priority="750" constant="45" id="XZJ-Lp-x7T"/>
+                <constraint firstItem="qrY-yp-Qfz" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="11" id="Zgw-tb-SuV"/>
+                <constraint firstItem="TzT-Vc-wud" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" priority="750" constant="39" id="jV1-0Y-r9Z"/>
+                <constraint firstItem="TzT-Vc-wud" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="mn0-NO-hPw"/>
+                <constraint firstItem="ONo-OS-E9B" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" constant="-1.5" id="rpw-k4-sIa"/>
+                <constraint firstAttribute="trailing" secondItem="ONo-OS-E9B" secondAttribute="trailing" constant="13" id="te0-k4-rYh"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLine" destination="RAL-xs-hAS" id="JZa-ah-LVt"/>
+                <outlet property="eaLabel" destination="TzT-Vc-wud" id="sPa-RU-YVm"/>
+                <outlet property="image" destination="qrY-yp-Qfz" id="ZD0-Sq-7tx"/>
+                <outlet property="numberOfFavorites" destination="ONo-OS-E9B" id="rst-qe-aBu"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="244"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Clock" width="48" height="48"/>
+    </resources>
+</document>

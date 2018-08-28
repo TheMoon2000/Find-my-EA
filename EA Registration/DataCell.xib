@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView identifier="cell" translatesAutoresizingMaskIntoConstraints="NO" id="Hzx-nO-O7b" customClass="DataCell" customModule="Find_my_EA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="35"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="NGp-uY-oEr">
+                    <rect key="frame" x="8" y="9" width="149" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="gxd-vr-n4s"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Table View Cell" id="1nB-DI-BhK">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <action selector="editCell:" target="Hzx-nO-O7b" id="UGq-oH-soh"/>
+                    </connections>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F0Q-x1-gqb">
+                    <rect key="frame" x="167" y="1" width="0.0" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="IZ3-cc-9ff"/>
+                        <constraint firstAttribute="width" id="VDk-x7-zfP"/>
+                    </constraints>
+                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="ZBj-dm-IXN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="deleteItem:" target="Hzx-nO-O7b" id="32b-RS-x3Q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NGp-uY-oEr" firstAttribute="centerY" secondItem="Hzx-nO-O7b" secondAttribute="centerY" id="723-O4-PiJ"/>
+                <constraint firstAttribute="trailing" secondItem="NGp-uY-oEr" secondAttribute="trailing" constant="14" id="Jb1-oI-iJH"/>
+                <constraint firstItem="NGp-uY-oEr" firstAttribute="leading" secondItem="Hzx-nO-O7b" secondAttribute="leading" constant="10" id="Kmt-4U-x7m"/>
+                <constraint firstAttribute="bottom" secondItem="F0Q-x1-gqb" secondAttribute="bottom" constant="1" id="ggg-tp-mXS"/>
+                <constraint firstAttribute="trailing" secondItem="F0Q-x1-gqb" secondAttribute="trailing" constant="2" id="gvZ-5f-1Fs"/>
+            </constraints>
+            <connections>
+                <outlet property="cellTitle" destination="NGp-uY-oEr" id="E3o-aG-6zw"/>
+                <outlet property="textField" destination="NGp-uY-oEr" id="rwQ-AO-ea0"/>
+            </connections>
+            <point key="canvasLocation" x="397.5" y="301.5"/>
+        </tableCellView>
+    </objects>
+</document>

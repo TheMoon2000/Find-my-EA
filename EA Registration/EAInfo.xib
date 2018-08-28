@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="EA Info" wantsLayer="YES" id="c22-O7-iKe" customClass="EAInfo" customModule="Find_my_EA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="vIJ-lj-JcC">
+                    <rect key="frame" x="0.0" y="1" width="297" height="124"/>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-dq-oAt">
+                    <rect key="frame" x="18" y="87" width="261" height="24"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" title="EA Name" id="dnj-Sb-T1b">
+                        <font key="font" size="16" name="HelveticaNeue-Bold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" alphaValue="0.80000000000000004" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="MOB-WE-RhO">
+                    <rect key="frame" x="7" y="-2" width="283" height="5"/>
+                </box>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8M0-uk-CiR">
+                    <rect key="frame" x="18" y="69" width="261" height="18"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Mon, Wed, Fri | 3:40-4:20" id="44y-77-vA8">
+                        <font key="font" size="12" name="HelveticaNeue"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField wantsLayer="YES" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMC-cM-jgQ" customClass="AutoResizingTextField" customModule="Find_my_EA" customModuleProvider="target">
+                    <rect key="frame" x="18" y="15" width="261" height="51"/>
+                    <textFieldCell key="cell" truncatesLastVisibleLine="YES" sendsActionOnEndEditing="YES" id="2YH-VC-WNY">
+                        <font key="font" size="11.25" name="HelveticaNeue"/>
+                        <string key="title">Are you interested in coding? Code Club provides an opportunity for students with little or no prior experience to learn how to code.</string>
+                        <color key="textColor" red="0.20052744289340096" green="0.20052744289340096" blue="0.20052744289340096" alpha="0.80093107876712322" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="qGL-sS-Zop">
+                    <rect key="frame" x="0.0" y="1" width="297" height="124"/>
+                </customView>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="ASo-PC-9Wv">
+                    <rect key="frame" x="259" y="88" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="fhd-qa-vYj"/>
+                        <constraint firstAttribute="width" constant="18" id="wtt-nN-4hs"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Favorite_outline" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="kMp-L0-v0j">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="like:" target="c22-O7-iKe" id="SLE-ik-0kk"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5o-qR-Rkp">
+                    <rect key="frame" x="248" y="73" width="41" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="Yq4-lb-VJo"/>
+                    </constraints>
+                    <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0" id="gbo-Sd-AI5">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" red="0.76503013959390864" green="0.76503013959390864" blue="0.76503013959390864" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qGL-sS-Zop" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="1Ca-RU-BH5"/>
+                <constraint firstItem="8M0-uk-CiR" firstAttribute="top" secondItem="aaA-dq-oAt" secondAttribute="bottom" id="2Sh-LW-W5H"/>
+                <constraint firstItem="vIJ-lj-JcC" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="2xb-XR-t4t"/>
+                <constraint firstAttribute="trailing" secondItem="wMC-cM-jgQ" secondAttribute="trailing" constant="20" id="37s-gF-1iA"/>
+                <constraint firstItem="qGL-sS-Zop" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="CBw-Lt-wcQ"/>
+                <constraint firstItem="8M0-uk-CiR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="Cy6-dz-gvU"/>
+                <constraint firstItem="ASo-PC-9Wv" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="19" id="GCo-UF-nSa"/>
+                <constraint firstAttribute="bottom" secondItem="vIJ-lj-JcC" secondAttribute="bottom" constant="1" id="JQd-4o-5Pc"/>
+                <constraint firstItem="wMC-cM-jgQ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="59" id="Jeh-Jx-gxq"/>
+                <constraint firstAttribute="trailing" secondItem="e5o-qR-Rkp" secondAttribute="trailing" constant="10" id="Kxp-KQ-IXf"/>
+                <constraint firstItem="e5o-qR-Rkp" firstAttribute="top" secondItem="ASo-PC-9Wv" secondAttribute="bottom" constant="1" id="P4g-8W-QWc"/>
+                <constraint firstAttribute="bottom" secondItem="MOB-WE-RhO" secondAttribute="bottom" id="REU-Zo-z1Q"/>
+                <constraint firstAttribute="bottom" secondItem="qGL-sS-Zop" secondAttribute="bottom" constant="1" id="TpB-oq-9BM"/>
+                <constraint firstAttribute="trailing" secondItem="MOB-WE-RhO" secondAttribute="trailing" constant="7" id="UnI-5s-3kH"/>
+                <constraint firstAttribute="trailing" secondItem="vIJ-lj-JcC" secondAttribute="trailing" id="aV4-g7-DiH"/>
+                <constraint firstItem="aaA-dq-oAt" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="14" id="cAX-mu-mMa"/>
+                <constraint firstItem="wMC-cM-jgQ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="eCs-E3-J8b"/>
+                <constraint firstAttribute="trailing" secondItem="8M0-uk-CiR" secondAttribute="trailing" constant="20" id="gZZ-tI-ObR"/>
+                <constraint firstItem="aaA-dq-oAt" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="hua-Zs-7DD"/>
+                <constraint firstItem="MOB-WE-RhO" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="7" id="iSV-bA-0nh"/>
+                <constraint firstAttribute="trailing" secondItem="aaA-dq-oAt" secondAttribute="trailing" constant="20" id="oga-RB-rgO"/>
+                <constraint firstItem="vIJ-lj-JcC" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="rd2-YZ-7O5"/>
+                <constraint firstAttribute="trailing" secondItem="ASo-PC-9Wv" secondAttribute="trailing" constant="20" id="vio-AE-VIw"/>
+                <constraint firstAttribute="trailing" secondItem="qGL-sS-Zop" secondAttribute="trailing" id="xd2-Zc-ADH"/>
+            </constraints>
+            <connections>
+                <outlet property="EATime" destination="8M0-uk-CiR" id="Mi3-he-7u0"/>
+                <outlet property="EAdescription" destination="wMC-cM-jgQ" id="cKx-oa-nWa"/>
+                <outlet property="EAname" destination="aaA-dq-oAt" id="ae7-D1-SUE"/>
+                <outlet property="background" destination="vIJ-lj-JcC" id="A6y-Xn-U69"/>
+                <outlet property="bottomLine" destination="MOB-WE-RhO" id="9XU-ga-Yr7"/>
+                <outlet property="like" destination="ASo-PC-9Wv" id="Hcp-q9-3LF"/>
+                <outlet property="numberOfLikes" destination="e5o-qR-Rkp" id="D81-vF-WzK"/>
+                <outlet property="white" destination="qGL-sS-Zop" id="xol-lk-AEL"/>
+            </connections>
+            <point key="canvasLocation" x="200.5" y="292.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Favorite_outline" width="92" height="80"/>
+    </resources>
+</document>

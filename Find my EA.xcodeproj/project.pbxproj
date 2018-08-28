@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC09A8D51E3AD2A0009C4438 /* WhitelistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09A8D41E3AD2A0009C4438 /* WhitelistViewController.swift */; };
+		CC09A8D71E3AD2B2009C4438 /* WhitelistWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09A8D61E3AD2B2009C4438 /* WhitelistWindowController.swift */; };
+		CC09A8DA1E3AD2DD009C4438 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09A8D81E3AD2DD009C4438 /* DataCell.swift */; };
+		CC09A8DB1E3AD2DD009C4438 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC09A8D91E3AD2DD009C4438 /* DataCell.xib */; };
+		CC19604B1DF3E6BB00FB9FE6 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC19604A1DF3E6BB00FB9FE6 /* Protocol.swift */; };
+		CC1960681DF59D6E00FB9FE6 /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1960671DF59D6E00FB9FE6 /* MainWindow.swift */; };
+		CC1D14761DF29ED300018681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D14751DF29ED300018681 /* AppDelegate.swift */; };
+		CC1D14781DF29ED300018681 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D14771DF29ED300018681 /* ViewController.swift */; };
+		CC1D147A1DF29ED300018681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1D14791DF29ED300018681 /* Assets.xcassets */; };
+		CC1D147D1DF29ED300018681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1D147B1DF29ED300018681 /* Main.storyboard */; };
+		CC1D14871DF29F1900018681 /* EA Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D14861DF29F1900018681 /* EA Struct.swift */; };
+		CC1D148C1DF29F4400018681 /* EACellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D14881DF29F4400018681 /* EACellView.swift */; };
+		CC1D148D1DF29F4400018681 /* EACellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1D14891DF29F4400018681 /* EACellView.xib */; };
+		CC1D148E1DF29F4400018681 /* EAInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1D148A1DF29F4400018681 /* EAInfo.swift */; };
+		CC1D148F1DF29F4400018681 /* EAInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC1D148B1DF29F4400018681 /* EAInfo.xib */; };
+		CC2666D61E162BCF007447AA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2666D41E162BCF007447AA /* AboutViewController.swift */; };
+		CC2666DE1E16B0FA007447AA /* CheckForUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2666DD1E16B0FA007447AA /* CheckForUpdates.swift */; };
+		CC4D5FC51E137E4000B766EE /* Find my EA.icns in Resources */ = {isa = PBXBuildFile; fileRef = CC4D5FC41E137E4000B766EE /* Find my EA.icns */; };
+		CC65AB2C1E34868A0068A0D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC65AB2B1E34868A0068A0D0 /* QuartzCore.framework */; };
+		CC65AB321E3486D20068A0D0 /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = CC65AB311E3486D20068A0D0 /* ITSwitch.m */; };
+		CC6A069B1E0F7C3000687D31 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6A069A1E0F7C3000687D31 /* MapViewController.swift */; };
+		CC6D71A31E2A1D4200E73E31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6D71A21E2A1D4200E73E31 /* Extensions.swift */; };
+		CC9ED83D1DFED44D00C66566 /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9ED83C1DFED44D00C66566 /* Terminal.swift */; };
+		CC9F458A1E1FB53100CEA18E /* AutoResizingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F45891E1FB53100CEA18E /* AutoResizingTextField.swift */; };
+		CCA3A69C1E45D6940035EB32 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3A69B1E45D6940035EB32 /* Progress.swift */; };
+		CCAFA3BA1E8BAB4A0002D1DA /* BugReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFA3B91E8BAB4A0002D1DA /* BugReporter.swift */; };
+		CCB645EF1E3D9FD0001485F5 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB645EE1E3D9FD0001485F5 /* ForgotPassword.swift */; };
+		CCCCAE481E193E3A00A938A7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCCAE471E193E3A00A938A7 /* CFNetwork.framework */; };
+		CCCCAE621E193E7300A938A7 /* GRRequestsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE4B1E193E7300A938A7 /* GRRequestsManager.m */; };
+		CCCCAE631E193E7300A938A7 /* GRCreateDirectoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE4F1E193E7300A938A7 /* GRCreateDirectoryRequest.m */; };
+		CCCCAE641E193E7300A938A7 /* GRDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE511E193E7300A938A7 /* GRDeleteRequest.m */; };
+		CCCCAE651E193E7300A938A7 /* GRDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE531E193E7300A938A7 /* GRDownloadRequest.m */; };
+		CCCCAE661E193E7300A938A7 /* GRListingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE551E193E7300A938A7 /* GRListingRequest.m */; };
+		CCCCAE671E193E7300A938A7 /* GRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE571E193E7300A938A7 /* GRRequest.m */; };
+		CCCCAE681E193E7300A938A7 /* GRUploadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE5A1E193E7300A938A7 /* GRUploadRequest.m */; };
+		CCCCAE691E193E7300A938A7 /* GRError.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE5D1E193E7300A938A7 /* GRError.m */; };
+		CCCCAE6A1E193E7300A938A7 /* GRQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE5F1E193E7300A938A7 /* GRQueue.m */; };
+		CCCCAE6B1E193E7300A938A7 /* GRStreamInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCCAE611E193E7300A938A7 /* GRStreamInfo.m */; };
+		CCD69C0A1E0CDFCB00A4566B /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD69C091E0CDFCB00A4566B /* Banner.swift */; };
+		CCD9D9921E826024000B8F31 /* ADAuthentication.php in Resources */ = {isa = PBXBuildFile; fileRef = CCD9D9911E826024000B8F31 /* ADAuthentication.php */; };
+		CCD9D9981E826CFF000B8F31 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9D9971E826CFF000B8F31 /* ConfirmationView.swift */; };
+		CCE1234F1EAA5914004820D3 /* NSDataGzipAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1234A1EAA5914004820D3 /* NSDataGzipAdditions.m */; };
+		CCE123501EAA5914004820D3 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1234C1EAA5914004820D3 /* NSData+AESCrypt.m */; };
+		CCE123511EAA5914004820D3 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1234E1EAA5914004820D3 /* NSString+AESCrypt.m */; };
+		CCE123531EAA591F004820D3 /* libz.1.2.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE123521EAA591F004820D3 /* libz.1.2.8.dylib */; };
+		CCE17E5A1E05023D00F81106 /* ColorGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE17E591E05023D00F81106 /* ColorGroups.swift */; };
+		CCE31EC41EE985380095B2CF /* UpdateInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE31EC31EE985380095B2CF /* UpdateInfoVC.swift */; };
+		CCE6EDE51E36080E006B06E9 /* RegistrationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE6EDE41E36080E006B06E9 /* RegistrationWindow.swift */; };
+		CCE6EDE71E361962006B06E9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE6EDE61E361962006B06E9 /* LoginView.swift */; };
+		CCE6EDEE1E36280A006B06E9 /* SignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE6EDED1E36280A006B06E9 /* SignupButton.swift */; };
+		CCE6EDF21E3748DC006B06E9 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE6EDF11E3748DC006B06E9 /* ResetPassword.swift */; };
+		CCE6EE0D1E3788D1006B06E9 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE6EE0C1E3788D1006B06E9 /* CloseButton.swift */; };
+		CCFC636F1E0E4F0C0012C80B /* MapWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC636E1E0E4F0C0012C80B /* MapWindowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC09A8D41E3AD2A0009C4438 /* WhitelistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhitelistViewController.swift; sourceTree = "<group>"; };
+		CC09A8D61E3AD2B2009C4438 /* WhitelistWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhitelistWindowController.swift; sourceTree = "<group>"; };
+		CC09A8D81E3AD2DD009C4438 /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		CC09A8D91E3AD2DD009C4438 /* DataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
+		CC19604A1DF3E6BB00FB9FE6 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		CC1960671DF59D6E00FB9FE6 /* MainWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		CC1D14721DF29ED300018681 /* Find my EA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find my EA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC1D14751DF29ED300018681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC1D14771DF29ED300018681 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC1D14791DF29ED300018681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC1D147C1DF29ED300018681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC1D147E1DF29ED300018681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1D14861DF29F1900018681 /* EA Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EA Struct.swift"; sourceTree = "<group>"; };
+		CC1D14881DF29F4400018681 /* EACellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EACellView.swift; sourceTree = "<group>"; };
+		CC1D14891DF29F4400018681 /* EACellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EACellView.xib; sourceTree = "<group>"; };
+		CC1D148A1DF29F4400018681 /* EAInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAInfo.swift; sourceTree = "<group>"; };
+		CC1D148B1DF29F4400018681 /* EAInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EAInfo.xib; sourceTree = "<group>"; };
+		CC2666D41E162BCF007447AA /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CC2666DD1E16B0FA007447AA /* CheckForUpdates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckForUpdates.swift; sourceTree = "<group>"; };
+		CC4D5FC41E137E4000B766EE /* Find my EA.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Find my EA.icns"; sourceTree = "<group>"; };
+		CC65AB2B1E34868A0068A0D0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC65AB301E3486D20068A0D0 /* ITSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSwitch.h; sourceTree = "<group>"; };
+		CC65AB311E3486D20068A0D0 /* ITSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSwitch.m; sourceTree = "<group>"; };
+		CC6A069A1E0F7C3000687D31 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CC6D71A21E2A1D4200E73E31 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CC9ED83C1DFED44D00C66566 /* Terminal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
+		CC9F45891E1FB53100CEA18E /* AutoResizingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoResizingTextField.swift; sourceTree = "<group>"; };
+		CCA3A69B1E45D6940035EB32 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		CCAFA3B91E8BAB4A0002D1DA /* BugReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugReporter.swift; sourceTree = "<group>"; };
+		CCB645EE1E3D9FD0001485F5 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		CCCCAE471E193E3A00A938A7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CCCCAE4A1E193E7300A938A7 /* GRRequestsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRRequestsManager.h; sourceTree = "<group>"; };
+		CCCCAE4B1E193E7300A938A7 /* GRRequestsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRRequestsManager.m; sourceTree = "<group>"; };
+		CCCCAE4C1E193E7300A938A7 /* GRRequestsManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRRequestsManagerProtocol.h; sourceTree = "<group>"; };
+		CCCCAE4E1E193E7300A938A7 /* GRCreateDirectoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRCreateDirectoryRequest.h; sourceTree = "<group>"; };
+		CCCCAE4F1E193E7300A938A7 /* GRCreateDirectoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRCreateDirectoryRequest.m; sourceTree = "<group>"; };
+		CCCCAE501E193E7300A938A7 /* GRDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDeleteRequest.h; sourceTree = "<group>"; };
+		CCCCAE511E193E7300A938A7 /* GRDeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRDeleteRequest.m; sourceTree = "<group>"; };
+		CCCCAE521E193E7300A938A7 /* GRDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRDownloadRequest.h; sourceTree = "<group>"; };
+		CCCCAE531E193E7300A938A7 /* GRDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRDownloadRequest.m; sourceTree = "<group>"; };
+		CCCCAE541E193E7300A938A7 /* GRListingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRListingRequest.h; sourceTree = "<group>"; };
+		CCCCAE551E193E7300A938A7 /* GRListingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRListingRequest.m; sourceTree = "<group>"; };
+		CCCCAE561E193E7300A938A7 /* GRRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRRequest.h; sourceTree = "<group>"; };
+		CCCCAE571E193E7300A938A7 /* GRRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRRequest.m; sourceTree = "<group>"; };
+		CCCCAE581E193E7300A938A7 /* GRRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRRequestProtocol.h; sourceTree = "<group>"; };
+		CCCCAE591E193E7300A938A7 /* GRUploadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRUploadRequest.h; sourceTree = "<group>"; };
+		CCCCAE5A1E193E7300A938A7 /* GRUploadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRUploadRequest.m; sourceTree = "<group>"; };
+		CCCCAE5C1E193E7300A938A7 /* GRError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRError.h; sourceTree = "<group>"; };
+		CCCCAE5D1E193E7300A938A7 /* GRError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRError.m; sourceTree = "<group>"; };
+		CCCCAE5E1E193E7300A938A7 /* GRQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRQueue.h; sourceTree = "<group>"; };
+		CCCCAE5F1E193E7300A938A7 /* GRQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRQueue.m; sourceTree = "<group>"; };
+		CCCCAE601E193E7300A938A7 /* GRStreamInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRStreamInfo.h; sourceTree = "<group>"; };
+		CCCCAE611E193E7300A938A7 /* GRStreamInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRStreamInfo.m; sourceTree = "<group>"; };
+		CCD69C091E0CDFCB00A4566B /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		CCD9D9911E826024000B8F31 /* ADAuthentication.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ADAuthentication.php; sourceTree = "<group>"; };
+		CCD9D9971E826CFF000B8F31 /* ConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		CCE123491EAA5914004820D3 /* NSDataGzipAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataGzipAdditions.h; sourceTree = "<group>"; };
+		CCE1234A1EAA5914004820D3 /* NSDataGzipAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataGzipAdditions.m; sourceTree = "<group>"; };
+		CCE1234B1EAA5914004820D3 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		CCE1234C1EAA5914004820D3 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		CCE1234D1EAA5914004820D3 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		CCE1234E1EAA5914004820D3 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
+		CCE123521EAA591F004820D3 /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
+		CCE17E591E05023D00F81106 /* ColorGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGroups.swift; sourceTree = "<group>"; };
+		CCE31EC31EE985380095B2CF /* UpdateInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateInfoVC.swift; sourceTree = "<group>"; };
+		CCE6EDE41E36080E006B06E9 /* RegistrationWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationWindow.swift; sourceTree = "<group>"; };
+		CCE6EDE61E361962006B06E9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CCE6EDED1E36280A006B06E9 /* SignupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupButton.swift; sourceTree = "<group>"; };
+		CCE6EDF11E3748DC006B06E9 /* ResetPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		CCE6EE0C1E3788D1006B06E9 /* CloseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		CCFC636E1E0E4F0C0012C80B /* MapWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapWindowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC1D146F1DF29ED300018681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE123531EAA591F004820D3 /* libz.1.2.8.dylib in Frameworks */,
+				CC65AB2C1E34868A0068A0D0 /* QuartzCore.framework in Frameworks */,
+				CCCCAE481E193E3A00A938A7 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC0BFDF01EB5D91E000FAD85 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		CC162EB91E124D3000739636 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		CC1D14691DF29ED300018681 = {
+			isa = PBXGroup;
+			children = (
+				CC65AB301E3486D20068A0D0 /* ITSwitch.h */,
+				CC65AB311E3486D20068A0D0 /* ITSwitch.m */,
+				CCE123491EAA5914004820D3 /* NSDataGzipAdditions.h */,
+				CCE1234A1EAA5914004820D3 /* NSDataGzipAdditions.m */,
+				CCE1234B1EAA5914004820D3 /* NSData+AESCrypt.h */,
+				CCE1234C1EAA5914004820D3 /* NSData+AESCrypt.m */,
+				CCE1234D1EAA5914004820D3 /* NSString+AESCrypt.h */,
+				CCE1234E1EAA5914004820D3 /* NSString+AESCrypt.m */,
+				CCE123521EAA591F004820D3 /* libz.1.2.8.dylib */,
+				CC65AB2B1E34868A0068A0D0 /* QuartzCore.framework */,
+				CCCCAE471E193E3A00A938A7 /* CFNetwork.framework */,
+				CC1D14741DF29ED300018681 /* EA Registration */,
+				CC1D14731DF29ED300018681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC1D14731DF29ED300018681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC1D14721DF29ED300018681 /* Find my EA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC1D14741DF29ED300018681 /* EA Registration */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCAE491E193E7300A938A7 /* Sources */,
+				CC2666D41E162BCF007447AA /* AboutViewController.swift */,
+				CC1D14751DF29ED300018681 /* AppDelegate.swift */,
+				CC1960671DF59D6E00FB9FE6 /* MainWindow.swift */,
+				CC1D14771DF29ED300018681 /* ViewController.swift */,
+				CC2666DD1E16B0FA007447AA /* CheckForUpdates.swift */,
+				CC6D71A21E2A1D4200E73E31 /* Extensions.swift */,
+				CCA3A69B1E45D6940035EB32 /* Progress.swift */,
+				CC19604A1DF3E6BB00FB9FE6 /* Protocol.swift */,
+				CCD69C091E0CDFCB00A4566B /* Banner.swift */,
+				CC4D5FC41E137E4000B766EE /* Find my EA.icns */,
+				CCE17E591E05023D00F81106 /* ColorGroups.swift */,
+				CCE6EE0C1E3788D1006B06E9 /* CloseButton.swift */,
+				CCE6EDE41E36080E006B06E9 /* RegistrationWindow.swift */,
+				CCE6EDE61E361962006B06E9 /* LoginView.swift */,
+				CCE6EDF11E3748DC006B06E9 /* ResetPassword.swift */,
+				CCB645EE1E3D9FD0001485F5 /* ForgotPassword.swift */,
+				CC1D147B1DF29ED300018681 /* Main.storyboard */,
+				CCAFA3B91E8BAB4A0002D1DA /* BugReporter.swift */,
+				CCD9D9971E826CFF000B8F31 /* ConfirmationView.swift */,
+				CC1D14791DF29ED300018681 /* Assets.xcassets */,
+				CCE31EC31EE985380095B2CF /* UpdateInfoVC.swift */,
+				CC09A8D61E3AD2B2009C4438 /* WhitelistWindowController.swift */,
+				CC09A8D41E3AD2A0009C4438 /* WhitelistViewController.swift */,
+				CCE6EDED1E36280A006B06E9 /* SignupButton.swift */,
+				CC09A8D81E3AD2DD009C4438 /* DataCell.swift */,
+				CC09A8D91E3AD2DD009C4438 /* DataCell.xib */,
+				CCFC636E1E0E4F0C0012C80B /* MapWindowController.swift */,
+				CC6A069A1E0F7C3000687D31 /* MapViewController.swift */,
+				CC1D14861DF29F1900018681 /* EA Struct.swift */,
+				CC1D14881DF29F4400018681 /* EACellView.swift */,
+				CC1D14891DF29F4400018681 /* EACellView.xib */,
+				CC1D148A1DF29F4400018681 /* EAInfo.swift */,
+				CC1D148B1DF29F4400018681 /* EAInfo.xib */,
+				CC9F45891E1FB53100CEA18E /* AutoResizingTextField.swift */,
+				CCD9D9911E826024000B8F31 /* ADAuthentication.php */,
+				CC0BFDF01EB5D91E000FAD85 /* Images */,
+				CC162EB91E124D3000739636 /* Animations */,
+				CC9ED83C1DFED44D00C66566 /* Terminal.swift */,
+				CC1D147E1DF29ED300018681 /* Info.plist */,
+			);
+			path = "EA Registration";
+			sourceTree = "<group>";
+		};
+		CCCCAE491E193E7300A938A7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCAE4A1E193E7300A938A7 /* GRRequestsManager.h */,
+				CCCCAE4B1E193E7300A938A7 /* GRRequestsManager.m */,
+				CCCCAE4C1E193E7300A938A7 /* GRRequestsManagerProtocol.h */,
+				CCCCAE4D1E193E7300A938A7 /* Requests */,
+				CCCCAE5B1E193E7300A938A7 /* Utils */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CCCCAE4D1E193E7300A938A7 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCAE4E1E193E7300A938A7 /* GRCreateDirectoryRequest.h */,
+				CCCCAE4F1E193E7300A938A7 /* GRCreateDirectoryRequest.m */,
+				CCCCAE501E193E7300A938A7 /* GRDeleteRequest.h */,
+				CCCCAE511E193E7300A938A7 /* GRDeleteRequest.m */,
+				CCCCAE521E193E7300A938A7 /* GRDownloadRequest.h */,
+				CCCCAE531E193E7300A938A7 /* GRDownloadRequest.m */,
+				CCCCAE541E193E7300A938A7 /* GRListingRequest.h */,
+				CCCCAE551E193E7300A938A7 /* GRListingRequest.m */,
+				CCCCAE561E193E7300A938A7 /* GRRequest.h */,
+				CCCCAE571E193E7300A938A7 /* GRRequest.m */,
+				CCCCAE581E193E7300A938A7 /* GRRequestProtocol.h */,
+				CCCCAE591E193E7300A938A7 /* GRUploadRequest.h */,
+				CCCCAE5A1E193E7300A938A7 /* GRUploadRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CCCCAE5B1E193E7300A938A7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CCCCAE5C1E193E7300A938A7 /* GRError.h */,
+				CCCCAE5D1E193E7300A938A7 /* GRError.m */,
+				CCCCAE5E1E193E7300A938A7 /* GRQueue.h */,
+				CCCCAE5F1E193E7300A938A7 /* GRQueue.m */,
+				CCCCAE601E193E7300A938A7 /* GRStreamInfo.h */,
+				CCCCAE611E193E7300A938A7 /* GRStreamInfo.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC1D14711DF29ED300018681 /* Find my EA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1D14811DF29ED300018681 /* Build configuration list for PBXNativeTarget "Find my EA" */;
+			buildPhases = (
+				CC1D146E1DF29ED300018681 /* Sources */,
+				CC1D146F1DF29ED300018681 /* Frameworks */,
+				CC1D14701DF29ED300018681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find my EA";
+			productName = "EA Registration";
+			productReference = CC1D14721DF29ED300018681 /* Find my EA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC1D146A1DF29ED300018681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jerry Shan";
+				TargetAttributes = {
+					CC1D14711DF29ED300018681 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = GR353CPP2V;
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = CC1D146D1DF29ED300018681 /* Build configuration list for PBXProject "Find my EA" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC1D14691DF29ED300018681;
+			productRefGroup = CC1D14731DF29ED300018681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC1D14711DF29ED300018681 /* Find my EA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC1D14701DF29ED300018681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4D5FC51E137E4000B766EE /* Find my EA.icns in Resources */,
+				CC1D147A1DF29ED300018681 /* Assets.xcassets in Resources */,
+				CCD9D9921E826024000B8F31 /* ADAuthentication.php in Resources */,
+				CC1D148F1DF29F4400018681 /* EAInfo.xib in Resources */,
+				CC1D147D1DF29ED300018681 /* Main.storyboard in Resources */,
+				CC09A8DB1E3AD2DD009C4438 /* DataCell.xib in Resources */,
+				CC1D148D1DF29F4400018681 /* EACellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC1D146E1DF29ED300018681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCCAE6B1E193E7300A938A7 /* GRStreamInfo.m in Sources */,
+				CC1960681DF59D6E00FB9FE6 /* MainWindow.swift in Sources */,
+				CCCCAE681E193E7300A938A7 /* GRUploadRequest.m in Sources */,
+				CCCCAE6A1E193E7300A938A7 /* GRQueue.m in Sources */,
+				CCE6EDF21E3748DC006B06E9 /* ResetPassword.swift in Sources */,
+				CC1D148C1DF29F4400018681 /* EACellView.swift in Sources */,
+				CCE123511EAA5914004820D3 /* NSString+AESCrypt.m in Sources */,
+				CC1D14781DF29ED300018681 /* ViewController.swift in Sources */,
+				CC09A8DA1E3AD2DD009C4438 /* DataCell.swift in Sources */,
+				CCA3A69C1E45D6940035EB32 /* Progress.swift in Sources */,
+				CCCCAE631E193E7300A938A7 /* GRCreateDirectoryRequest.m in Sources */,
+				CC1D148E1DF29F4400018681 /* EAInfo.swift in Sources */,
+				CCCCAE651E193E7300A938A7 /* GRDownloadRequest.m in Sources */,
+				CC19604B1DF3E6BB00FB9FE6 /* Protocol.swift in Sources */,
+				CC1D14871DF29F1900018681 /* EA Struct.swift in Sources */,
+				CC9F458A1E1FB53100CEA18E /* AutoResizingTextField.swift in Sources */,
+				CC6A069B1E0F7C3000687D31 /* MapViewController.swift in Sources */,
+				CCD69C0A1E0CDFCB00A4566B /* Banner.swift in Sources */,
+				CCE6EE0D1E3788D1006B06E9 /* CloseButton.swift in Sources */,
+				CC09A8D51E3AD2A0009C4438 /* WhitelistViewController.swift in Sources */,
+				CC9ED83D1DFED44D00C66566 /* Terminal.swift in Sources */,
+				CCE6EDEE1E36280A006B06E9 /* SignupButton.swift in Sources */,
+				CC65AB321E3486D20068A0D0 /* ITSwitch.m in Sources */,
+				CCE31EC41EE985380095B2CF /* UpdateInfoVC.swift in Sources */,
+				CCE6EDE51E36080E006B06E9 /* RegistrationWindow.swift in Sources */,
+				CCE6EDE71E361962006B06E9 /* LoginView.swift in Sources */,
+				CC2666DE1E16B0FA007447AA /* CheckForUpdates.swift in Sources */,
+				CCCCAE661E193E7300A938A7 /* GRListingRequest.m in Sources */,
+				CC2666D61E162BCF007447AA /* AboutViewController.swift in Sources */,
+				CC1D14761DF29ED300018681 /* AppDelegate.swift in Sources */,
+				CCCCAE691E193E7300A938A7 /* GRError.m in Sources */,
+				CCFC636F1E0E4F0C0012C80B /* MapWindowController.swift in Sources */,
+				CCCCAE621E193E7300A938A7 /* GRRequestsManager.m in Sources */,
+				CCE17E5A1E05023D00F81106 /* ColorGroups.swift in Sources */,
+				CC09A8D71E3AD2B2009C4438 /* WhitelistWindowController.swift in Sources */,
+				CCB645EF1E3D9FD0001485F5 /* ForgotPassword.swift in Sources */,
+				CCAFA3BA1E8BAB4A0002D1DA /* BugReporter.swift in Sources */,
+				CCE123501EAA5914004820D3 /* NSData+AESCrypt.m in Sources */,
+				CCD9D9981E826CFF000B8F31 /* ConfirmationView.swift in Sources */,
+				CCE1234F1EAA5914004820D3 /* NSDataGzipAdditions.m in Sources */,
+				CCCCAE641E193E7300A938A7 /* GRDeleteRequest.m in Sources */,
+				CCCCAE671E193E7300A938A7 /* GRRequest.m in Sources */,
+				CC6D71A31E2A1D4200E73E31 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC1D147B1DF29ED300018681 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC1D147C1DF29ED300018681 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC1D147F1DF29ED300018681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC1D14801DF29ED300018681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC1D14821DF29ED300018681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "EA Registration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenic.Find-my-EA";
+				PRODUCT_NAME = "Find my EA";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CC1D14831DF29ED300018681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "EA Registration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tenic.Find-my-EA";
+				PRODUCT_NAME = "Find my EA";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC1D146D1DF29ED300018681 /* Build configuration list for PBXProject "Find my EA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1D147F1DF29ED300018681 /* Debug */,
+				CC1D14801DF29ED300018681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1D14811DF29ED300018681 /* Build configuration list for PBXNativeTarget "Find my EA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC1D14821DF29ED300018681 /* Debug */,
+				CC1D14831DF29ED300018681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC1D146A1DF29ED300018681 /* Project object */;
+}
